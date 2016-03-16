@@ -4,10 +4,10 @@ USE `domain`;
 
 CREATE TABLE `blog` (
     `blog_id` int(4) AUTO_INCREMENT,
-    `post_heading` varchar(255),
-    `subheading` varchar(255),
+    `title` varchar(255),
+    `subtitle` varchar(255),
     `date` date,
-    `content` longtext,
+    `url` longtext,
     PRIMARY KEY (`blog_id`)
 );
 
