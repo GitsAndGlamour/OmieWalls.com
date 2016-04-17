@@ -25,7 +25,8 @@ CREATE TABLE `portfolio` (
 
 CREATE TABLE `class` (
     `class_id` int(4),
-    `course` varchar(255),
+    `course` varchar(25),
+    `name` varchar(255),
     `professor` varchar(255),
     `year` char(4),
     `semester` char(25),

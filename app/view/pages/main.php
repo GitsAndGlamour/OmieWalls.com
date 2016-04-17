@@ -1,12 +1,11 @@
+<html lang="en" ng-app="domain">
 <?php
 
-$head = 'app/view/pages/snippets/main/head.html';
-$header = 'app/view/pages/snippets/main/header.html';
-$footer = 'app/view/pages/snippets/main/footer.html';
-
-$snippets = [$head, $header, $footer];
+$snippets = ['head', 'nav', 'header', 'main', 'footer'];
 
 foreach($snippets as $snippet) {
-    require ($snippet);
+    $path = 'app/view/pages/snippets/main/'.$snippet.'.html';
+    require ($path);
 }
 ?>
+</html>

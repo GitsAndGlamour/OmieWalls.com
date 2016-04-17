@@ -6,26 +6,33 @@ var app = angular.module('domain', [
 app.config(['$routeProvider',
             function ($routeProvider) {
         $routeProvider.
-        when('/', { 
+        when('/', {
             templateUrl: 'app/view/pages/templates/blog.php',
-            controller: 'blogController' 
+            controller: 'blogController'
         }).
-        when('/resume', { 
+        when('/resume', {
             templateUrl: 'app/view/pages/templates/resume.php',
-            controller: 'resumeController' 
+            controller: 'resumeController'
         }).
-        when('/portfolio', { 
+        when('/portfolio', {
             templateUrl: 'app/view/pages/templates/portfolio.php',
-            controller: 'portfolioController' 
+            controller: 'portfolioController'
         }).
-         when('/contact', { 
+        when('/portfolio/:filterResults', {
+            templateUrl: 'app/view/pages/templates/portfolio.php',
+            controller: 'portfolioController'
+        }).
+        when('/contact', {
             templateUrl: 'app/view/pages/templates/contact.php',
-            controller: 'contactController' 
+            controller: 'contactController'
         }).
-        when('/about', { 
-            templateUrl: 'app/view/pages/templates/about.php',
+        when('/contact/:submit', {
+            templateUrl: 'app/controller/contact.php'
         }).
-        otherwise({ 
+        when('/about', {
+            templateUrl: 'app/view/pages/templates/about.php'
+        }).
+        otherwise({
             redirectTo: '/'
         });
     }]);
