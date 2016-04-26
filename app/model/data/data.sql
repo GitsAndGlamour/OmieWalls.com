@@ -24,7 +24,9 @@ INSERT INTO `blog` (`title`, `subtitle`, `date`, `url`) VALUES
 
 ('Blind Success is the Best Success', 'Why I Seldomly Use Google When Stuck', '2016-03-29', 'app/model/blog/blog12.html'),
 
-('I Didn&#39t Get The Job, But I Found Something Better Out of Studying For It', 'Weekend Crash Course of IP Networks and Data Capacity Organization', '2016-03-28', 'app/model/blog/blog13.html');
+('Who Ever Said "Fake It &#39Till You Make It" Hasn&#39t Had to Write Code', 'A Conversation I Regret Having', '2016-04-20', 'app/model/blog/blog13.html'),
+
+('I Didn&#39t Get The Job, But I Found Something Better Out of Studying For It', 'Weekend Crash Course of IP Networks and Data Capacity Organization', '2016-03-28', 'app/model/blog/blog14.html');
 
 INSERT INTO `class` (`class_id`,`course`, `name`, `professor`,`year`,`semester`,`summary`) VALUES
 
